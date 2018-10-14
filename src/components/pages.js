@@ -4,10 +4,9 @@ import {yourAction} from '../actions/yourActions.js';
 import YourComponent1 from './your-component.js'
 import YourComponent2 from './your-component2.js'
 import { BrowserRouter, Route} from 'react-router-dom'; //{Link} to shift page;
-import BarComponent from './bar-component.js';
-import '../style.css';
+import YourApp from './your-app';
 
-class YourApp extends React.Component {
+class Pages extends React.Component {
 
   constructor(props) {
     super(props);
@@ -15,12 +14,12 @@ class YourApp extends React.Component {
 
   render() {
     return (
-
+      <BrowserRouter>
         <div>
-          <hr />
-          <BarComponent />
+          <Route path="/" component={YourApp} exact/>
+          <Route path="/c2" component={YourComponent2} />
         </div>
-
+      </BrowserRouter>
     );
   }
 }
@@ -29,4 +28,4 @@ const mapStateToProps = state => ({
   reduxProps: state.yourReducer.yourContent
 });
 
-export default connect(mapStateToProps, {yourAction})(YourApp);
+export default connect(mapStateToProps, {yourAction})(Pages);

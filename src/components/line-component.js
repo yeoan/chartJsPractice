@@ -6,7 +6,7 @@ import {Line} from 'react-chartjs-2';
 class LineComponent extends React.Component {
 
   componentWillMount(){
-    this.props.yourAction(1);
+    
   }
 
   constructor(props) {

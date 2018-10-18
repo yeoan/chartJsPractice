@@ -6,7 +6,7 @@ import {Bubble} from 'react-chartjs-2';
 class BubbleComponent extends React.Component {
 
   componentWillMount(){
-    this.props.yourAction(1);
+
   }
 
   constructor(props) {

@@ -6,7 +6,7 @@ import {Doughnut} from 'react-chartjs-2';
 class DoughoutComponent extends React.Component {
 
   componentWillMount(){
-    this.props.yourAction(1);
+
   }
 
   constructor(props) {

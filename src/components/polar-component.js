@@ -6,7 +6,7 @@ import {Polar} from 'react-chartjs-2';
 class PolarComponent extends React.Component {
 
   componentWillMount(){
-    this.props.yourAction(1);
+    
   }
 
   constructor(props) {

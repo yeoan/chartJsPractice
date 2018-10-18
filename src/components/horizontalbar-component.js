@@ -6,7 +6,7 @@ import {HorizontalBar} from 'react-chartjs-2';
 class HorizontalBarComponent extends React.Component {
 
   componentWillMount(){
-    this.props.yourAction(1);
+  
   }
 
   constructor(props) {
